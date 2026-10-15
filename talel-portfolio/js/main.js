@@ -261,4 +261,3 @@ document.addEventListener('pointerdown',e=>{if(!e.target.closest('#menu,#start')
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$('#menu').classList.remove('show')});
 function clock(){const d=new Date();$('#clock').innerHTML=d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})+'<div class="d">'+d.toLocaleDateString([],{day:'numeric',month:'short',year:'numeric'})+'</div>'}
 clock();setInterval(clock,10000);tasks();
-if(!mobile()){openApp('about');openApp('terminal')}
